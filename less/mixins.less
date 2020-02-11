@@ -1,1 +1,22 @@
 // Mixins Here
+.flexrow(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexcol(@justify, @align){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@color, @text, @border, @width, @heigth){
+    background-color: @color;
+    color: @text;
+    width: @width;
+    height: @heigth;
+    border: @border;
+    border-radius: 0.5rem;
+}
